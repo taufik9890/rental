@@ -418,6 +418,67 @@ font-family: 'Yeseva One', cursive;
 
 
 
+
+
+/*====================================
+            Gallery Part Start 
+=====================================*/
+.gallery_main {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: auto;
+    padding: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+.gallery_head{
+    padding-bottom: 40px;
+}
+
+.gallery_main::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    bottom: 0;
+    right: 0;
+	background: linear-gradient(90deg, rgba(0, 4, 40, 0.9) 0%, rgba(0, 78, 146, 0.9) 50%, rgba(0, 4, 40, 0.9) 100%);
+    z-index: -1;
+}
+.gallery_head h4{
+	font-size: 36px;
+	color: 		#FFAA33;
+	font-family: 'Roboto', sans-serif;
+	/* margin-top: 13px; */
+	text-transform: uppercase;
+}
+
+.gallery_head p{
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+}
+.gal_img {
+    position: relative;
+}
+
+
+
+.gal_mar {
+    margin-bottom: 30px;
+}
+.gal_img a{
+    display: block;
+}
+/*====================================
+            Gallery Part End
+=====================================*/
+
+
+
+
 /*=====CONTACT START=====*/
 #contact{
     padding: 90px 0px;
@@ -516,7 +577,7 @@ font-family: 'Yeseva One', cursive;
 
 
 /*=====FOOTER START=====*/
-footer {
+footer #contact {
 	padding-top: 90px;
 	background: linear-gradient(90deg, rgba(0,4,40,1) 0%, rgba(0,78,146,1) 50%, rgba(0,4,40,1) 100%);
 	overflow: hidden;
